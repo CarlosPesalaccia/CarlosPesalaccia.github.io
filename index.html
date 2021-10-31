@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <script src="https://kit.fontawesome.com/e1778d5843.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Contactos</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Casas de cambio  </a></li>
+    </ul>
+    <main>
+    
+        <div class="cont">
+            <p>Digito en pesos</p>
+            <input  class="input" value="0" type="text" name="pesos" id="pesos">
+        </div>
+        <div class="cont">
+            <p>Elegir moneda extranjera</p>
+            <div class="moneda">
+
+                <select class="input"  name="moneda" id="moneda">
+                    <option value="D">Dolar</option>
+                    <option value="E">Euro</option>
+                    <option value="R">Real</option>
+                </select>
+                <i class="fas fa-caret-up" id="Arrow" ></i>
+            </div>
+
+        </div>
+        <div class="cont">
+            <p class="invisible">a</p>
+            <button id="convert">Convertir</button>
+        </div>
+        <div class="cont">
+            <p>Resultado</p>
+            <h1 id="result"></h1>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
