@@ -7,7 +7,11 @@ function Update(value){
     let result = document.getElementById("result");
     result.innerHTML = value;
 }
-
+document.getElementById("Contacto").addEventListener("click",()=>
+{
+    alert(" Carlos Pesalaccia, Pesacarlos1995@gmail.com, 2616753764. \n\n Javier Velazquez")
+    
+})
 
 function Convertir(){
     
@@ -16,15 +20,15 @@ function Convertir(){
     let result
     switch (moneda) {
         case "D":
-            result="AR$"+parseFloat((pesos *(99.70))).toFixed(2); 
+            result="AR$"+parseFloat((pesos *(910))).toFixed(2); 
             
             break;
         case "E":
                 
-                result="AR$"+parseFloat((pesos*(115.19))).toFixed(2);
+                result="AR$"+parseFloat((pesos*(956.38))).toFixed(2);
             break;
         default:
-            result="AR$"+parseFloat(pesos*(17.69)).toFixed(2);
+            result="AR$"+parseFloat(pesos*(100)).toFixed(2);
         break;
     }
     Update(result)
