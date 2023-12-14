@@ -12,32 +12,80 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #829485;
-    height: 100vh;
+    
 }
-.menu{
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Evita que el contenido desborde */
+
+    
+    background-color: #fff;
+
+    /* Contenedor para la imagen */
+    position: relative;
+}
+
+/* Imagen de fondo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* La mitad superior de la página */
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+.menu {
     list-style: none;
-    padding: 0;
-    background: #092327;
-    width: %90;
+    padding: 0;  
+    width: 90%;
     max-width: 1000px;
     margin: auto;
-
-}
-.menu li a {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 100;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .menu li a {
     text-decoration: none;
     color: white;
     padding: 20px;
     display: block;
-}
-.menu li {
+  }
+  
+  .menu li {
     display: inline-block;
     text-align: center;
+  }
+  
+  .menu li a:hover {
+    background: #47ace7;
+  }
 
+  .titulo {
+    text-align: center;
+    padding: 20px;
+    font-family: 'NuevaFuente', sans-serif;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 15%; /* Coloca el 50% desde la parte superior */
+    left: 0; /* Coloca desde el borde izquierdo */
+    transform: translateY(-50%); /* Centra verticalmente */
+    z-index: 1; /* Asegura que esté sobre el fondo */
 }
-.menu li a:hover{
-    background: #ef8354;
+
+.titulo h1 {
+    margin: 0;
+    font-size: 2rem;
 }
+
 main{
     height: 40%;
     width: 60%;
@@ -56,6 +104,7 @@ p{
     margin-bottom:5px;
     font-size:1.1rem
 }
+
 .cont{
     display: flex;
     flex-direction: column;
@@ -124,4 +173,17 @@ button{
 button:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px 1px #333;
+}
+footer {
+    text-align: center;
+    padding: 0px;
+   
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+
+    
+
+
 }
