@@ -28,7 +28,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 50%;
-     background-color: #2255F0;
+    background-image: url('https://github.com/CarlosPesalaccia/CarlosPesalaccia.github.io/blob/main/fondo.jpg');
     background-size: cover;
     z-index: -1;
 }
